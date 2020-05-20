@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 20 13:44:05 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38098 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.github.frostyaxe.cucumber.runners.ExpediaCucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.github.frostyaxe.cucumber.runners.ExpediaCucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Hotel Search with correct details", "Expedia Hotel Search"</td>
+<td><div><pre>java.lang.AssertionError: expected [Mumbai, India (BOM-Chhatrapati Shivaji Intl.) Hotel Search Results] but found [Expedia Travel: Vacations, Cheap Flights, Airline Tickets &amp; Airfares]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.github.frostyaxe.cucumber.stepdefs.ExpediaHotelSearchStepDefs.lambda$3(ExpediaHotelSearchStepDefs.java:64)
+	at ?.User must be navigated to the results page(file:///C:/Users/Sangeeta-Laptop/eclipse-workspace/photo-workspace/CucumberTesting/CucumberExpediaTesting/src/test/resources/features/ExpediaHotelSearch.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1801562635", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1801562635'><pre>java.lang.AssertionError: expected [Mumbai, India (BOM-Chhatrapati Shivaji Intl.) Hotel Search Results] but found [Expedia Travel: Vacations, Cheap Flights, Airline Tickets &amp; Airfares]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.github.frostyaxe.cucumber.stepdefs.ExpediaHotelSearchStepDefs.lambda$3(ExpediaHotelSearchStepDefs.java:64)
+	at ?.User must be navigated to the results page(file:///C:/Users/Sangeeta-Laptop/eclipse-workspace/photo-workspace/CucumberTesting/CucumberExpediaTesting/src/test/resources/features/ExpediaHotelSearch.feature:18)
+</pre></div></td>
+<td>31</td>
+<td>com.github.frostyaxe.cucumber.runners.ExpediaCucumberTestRunner@436e852b</td></tr>
+<tr>
+<td title='com.github.frostyaxe.cucumber.runners.ExpediaCucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.github.frostyaxe.cucumber.runners.ExpediaCucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Expedia Return Flight Search Functionality with correct data.", "Expedia Flight Search"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;uitk-step-input-button uitk-step-input-plus&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (915, 556). Other element would receive the click: &lt;div class=&quot;uitk-col all-col-shrink&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=81.0.4044.138)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-3O39E0OU&apos;, ip: &apos;169.254.29.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\SANGEE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53748}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 459e2784c879cee5113f510a97b17ffa
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at com.github.frostyaxe.cucumber.stepdefs.ExpediaFlightSearchStepDefs.lambda$4(ExpediaFlightSearchStepDefs.java:115)
+	at ?.Enters the required details in the form fields(file:///C:/Users/Sangeeta-Laptop/eclipse-workspace/photo-workspace/CucumberTesting/CucumberExpediaTesting/src/test/resources/features/ExpediaFlightSearch.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace45788875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace45788875'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;uitk-step-input-button uitk-step-input-plus&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (915, 556). Other element would receive the click: &lt;div class=&quot;uitk-col all-col-shrink&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=81.0.4044.138)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-3O39E0OU&apos;, ip: &apos;169.254.29.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\SANGEE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53748}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 459e2784c879cee5113f510a97b17ffa
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at com.github.frostyaxe.cucumber.stepdefs.ExpediaFlightSearchStepDefs.lambda$4(ExpediaFlightSearchStepDefs.java:115)
+	at ?.Enters the required details in the form fields(file:///C:/Users/Sangeeta-Laptop/eclipse-workspace/photo-workspace/CucumberTesting/CucumberExpediaTesting/src/test/resources/features/ExpediaFlightSearch.feature:18)
+</pre></div></td>
+<td>37</td>
+<td>com.github.frostyaxe.cucumber.runners.ExpediaCucumberTestRunner@436e852b</td></tr>
+</table><p>
+</body>
+</html>

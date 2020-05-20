@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+<!--
+
+          Description: This maven based project is integrated with Cucumber and TestNG framework in order to perform the testing of the Expedia Application.
+     Application Name: Expedia
+		       Author: Abhishek Prajapati 
+		   Frameworks: Cucumber Java 8 and TestNG
+
+-->
+
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.frostyaxe</groupId>
+  <artifactId>CucumberExpediaTesting</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+  <!-- Setting Properties Below -->
+<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.3.0.RELEASE</version>
+	</parent>
+	<!-- Dependencies Management -->
+	<dependencies>
+
+		<!-- Selenium Java Maven Dependency -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java8</artifactId>
+			<version>5.6.0</version>
+		</dependency>
+
+	
+
+		<!-- Cucumber TestNG runs the Cucumber with TestNG runner -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>5.6.0</version>
+		</dependency>
+<dependency>
+  <groupId>com.github.frostyaxe</groupId>
+  <artifactId>frostylight</artifactId>
+  <version>1.0</version>
+</dependency>
+
+<dependency>
+	<groupId>com.github.frostyaxe</groupId>
+	<artifactId>data-factory</artifactId>
+	<version>1.0</version>
+	<scope>system</scope>
+	<systemPath>${project.basedir}/datafactory-lib/data-factory-1.0.jar</systemPath>
+</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+		<!-- Cucumber Java 8 Maven Dependency -->
+		
+  
+</project>

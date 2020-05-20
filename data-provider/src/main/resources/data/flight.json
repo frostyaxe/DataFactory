@@ -1,0 +1,54 @@
+[
+
+	{
+
+
+		"from": "Mumbai (BOM-Chhatrapati Shivaji Intl.)",
+		"to": "Kolkata (CCU-Netaji Subhash Chandra Bose Intl.)",
+		"departing": "21/05/2020",
+		"returning": "28/05/2020",
+		"travellers": "3"
+
+
+
+	},
+
+
+
+	{
+
+
+
+
+		"from": "Kolkata (CCU-Netaji Subhash Chandra Bose Intl.)",
+		"to ": "Mumbai (BOM-Chhatrapati Shivaji Intl.)",
+		"departing": "28/05/2020",
+		"returning": "01/06/2020",
+		"travellers": "2"
+
+
+
+	},
+
+
+
+	{
+
+
+
+
+		"from": "Mumbai (BOM-Chhatrapati Shivaji Intl.)",
+		"to": "Delhi (DEL-Indira Gandhi Intl.)",
+		"departing": "15/06/2020",
+		"returning": "20/05/2020",
+		"travellers": "5"
+
+
+
+
+	}
+
+
+
+
+]
